@@ -18,21 +18,6 @@ solely so that the study can be reproduced and checked independently.
 | `outputs_laptop8gb/cache/` | Cached intermediate results (NHANES table, zero-shot scores, reliability suite). |
 | `outputs_laptop8gb/logs/` | `manifest.json` (software/hardware/config fingerprint), `run.log`, `design_signature.txt`. |
 
-## Study in one paragraph
-
-Adults from NHANES 2011-2023 (public, de-identified) are labelled as CKD-range when eGFR is below
-60 mL/min/1.73 m2 or UACR is at least 30 mg/g. Thirteen low-lab screening variables are given to
-every arm; creatinine, eGFR, UACR and any kidney-function proxy are excluded as inputs to prevent
-label leakage, and race/ethnicity is not a model input. Development data are the 2011-2016 cycles;
-2017-Mar 2020 and 2021-2023 are held out as temporally shifted test sets. The arms are logistic
-regression, XGBoost, TabPFN, an open-weight causal LLM used only for constrained A/B scoring, and
-the open-weight System One (Laya) model evaluated zero-shot, recalibrated (Platt / temperature) and
-fine-tuned under several proper-scoring objectives. Labels are given to each arm through a fixed
-budget `K` with repeated random draws, so all arms see identical draws and comparisons are paired.
-
-Four hypotheses (H1-H4) are pre-registered in the notebook and evaluated by mechanical,
-pre-specified rules; the machine-readable verdicts are in
-`outputs_laptop8gb/tables/hypothesis_verdicts.json`.
 
 ## Reproducing the results
 
