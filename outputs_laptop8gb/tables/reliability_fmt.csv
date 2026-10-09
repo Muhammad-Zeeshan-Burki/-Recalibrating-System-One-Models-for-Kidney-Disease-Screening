@@ -1,0 +1,16 @@
+arm,variant,mean_abs_dp,big_change_rate
+LLM-ZS,compact template,0.06743701100318214,0.2375
+LLM-ZS,sentence template,0.027758676925892848,0.06
+LLM-ZS,reversed order,0.08856584507204326,0.3225
+LLM-ZS,shuffled order,0.0972251077696621,0.335
+LLM-ZS,alternative units,0.22689374148741653,0.6675
+S1-ZS,compact template,0.20245638472146937,0.9425
+S1-ZS,sentence template,0.2065425353156742,0.98
+S1-ZS,reversed order,0.1592005235261764,0.715
+S1-ZS,shuffled order,0.14415221776920048,0.6325
+S1-ZS,alternative units,0.06950262765599485,0.2
+S1-FT-ce,compact template,0.16959435307089926,0.7975
+S1-FT-ce,sentence template,0.11887955051121189,0.46
+S1-FT-ce,reversed order,0.13938493085346887,0.5275
+S1-FT-ce,shuffled order,0.3229058675359843,0.8725
+S1-FT-ce,alternative units,0.0625387089365553,0.2275

@@ -1,0 +1,17 @@
+\begin{table}[!t]
+\caption{Reliability-suite summary: mean monotonicity-violation rate, share of large changes under restatement, AUROC loss at the highest missingness rate, and extreme-risk rate with implausible inputs.}
+\label{tab:reliability}
+\centering
+\footnotesize
+\begin{tabular}{lcccc}
+\hline
+Model & Monot. viol. & Restatement & AUROC drop & Extreme rate \\ \hline
+LR & 0.182 & -- & 0.211 & 0.450 \\
+XGB & 0.172 & -- & 0.184 & 0.113 \\
+TabPFN & 0.086 & -- & 0.155 & 0.000 \\
+LLM-ZS & 0.044 & 0.325 & 0.119 & 0.193 \\
+S1-ZS & 0.199 & 0.694 & 0.174 & 0.000 \\
+S1-FT-ce & 0.142 & 0.577 & 0.159 & 0.181 \\
+\hline
+\end{tabular}
+\end{table}

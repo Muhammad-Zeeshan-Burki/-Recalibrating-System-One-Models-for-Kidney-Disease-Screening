@@ -1,0 +1,37 @@
+Model,Set,Metric,Diff.,95\% CI,$p_{\mathrm{Holm}}$
+LLM zero-shot + Platt,int,auroc,-0.0091,-0.0299--0.0108,0.672
+LLM zero-shot + Platt,int,brier,0.0018,-0.0015--0.0051,0.300
+LLM zero-shot + temp.,int,auroc,-0.0091,-0.0299--0.0108,0.672
+LLM zero-shot + temp.,int,brier,0.0634,0.0533--0.0734,0.012
+Logistic regression,int,auroc,-0.0579,-0.0711---0.0465,0.012
+Logistic regression,int,brier,0.0167,0.0148--0.0187,0.012
+System One zero-shot + Platt,int,auroc,-0.0683,-0.0972---0.0359,0.012
+System One zero-shot + Platt,int,brier,0.0078,0.0038--0.0117,0.012
+System One zero-shot + temp.,int,auroc,-0.0683,-0.0972---0.0359,0.012
+System One zero-shot + temp.,int,brier,0.1333,0.1238--0.1428,0.012
+XGBoost,int,auroc,-0.0459,-0.0572---0.0354,0.012
+XGBoost,int,brier,0.0108,0.0089--0.0130,0.012
+LLM zero-shot + Platt,T1,auroc,-0.0264,-0.0446---0.0086,0.012
+LLM zero-shot + Platt,T1,brier,0.0031,-0.0004--0.0065,0.100
+LLM zero-shot + temp.,T1,auroc,-0.0263,-0.0446---0.0086,0.012
+LLM zero-shot + temp.,T1,brier,0.0625,0.0517--0.0739,0.012
+Logistic regression,T1,auroc,-0.0684,-0.0776---0.0584,0.012
+Logistic regression,T1,brier,0.0206,0.0183--0.0228,0.012
+System One zero-shot + Platt,T1,auroc,-0.0597,-0.0874---0.0349,0.012
+System One zero-shot + Platt,T1,brier,0.0080,0.0039--0.0125,0.012
+System One zero-shot + temp.,T1,auroc,-0.0597,-0.0874---0.0349,0.012
+System One zero-shot + temp.,T1,brier,0.1175,0.1084--0.1274,0.012
+XGBoost,T1,auroc,-0.0585,-0.0671---0.0491,0.012
+XGBoost,T1,brier,0.0158,0.0137--0.0181,0.012
+LLM zero-shot + Platt,T2,auroc,-0.0121,-0.0304--0.0055,0.416
+LLM zero-shot + Platt,T2,brier,0.0025,-0.0010--0.0058,0.184
+LLM zero-shot + temp.,T2,auroc,-0.0121,-0.0304--0.0055,0.416
+LLM zero-shot + temp.,T2,brier,0.0570,0.0475--0.0666,0.012
+Logistic regression,T2,auroc,-0.0678,-0.0782---0.0581,0.012
+Logistic regression,T2,brier,0.0198,0.0177--0.0220,0.012
+System One zero-shot + Platt,T2,auroc,-0.0551,-0.0778---0.0309,0.012
+System One zero-shot + Platt,T2,brier,0.0074,0.0038--0.0109,0.012
+System One zero-shot + temp.,T2,auroc,-0.0551,-0.0778---0.0309,0.012
+System One zero-shot + temp.,T2,brier,0.1187,0.1095--0.1281,0.012
+XGBoost,T2,auroc,-0.0444,-0.0555---0.0344,0.012
+XGBoost,T2,brier,0.0120,0.0100--0.0143,0.012

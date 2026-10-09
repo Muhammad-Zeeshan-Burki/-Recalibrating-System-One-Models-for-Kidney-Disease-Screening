@@ -1,0 +1,6 @@
+{
+ "H1": "not supported (equivalent in 1/4 proper-score comparisons after temperature scaling)",
+ "H2": "not supported (mean monotonicity violation text arms 0.128 vs reference 0.134; mean big-change rate under restatement 0.532)",
+ "H3": "not supported (arms exceeding TabPFN mean AUROC: [('LLM-ZS+Platt', 32)])",
+ "H4": "drift (T2 Brier minus internal): zero-shot 0.0016 vs adapted 0.0149; Brier recovered by recalibration: zero-shot 0.1135, adapted 0.0062"
+}

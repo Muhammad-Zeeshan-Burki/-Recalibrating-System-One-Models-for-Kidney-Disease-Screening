@@ -1,0 +1,467 @@
+2026-10-03 12:09:15 [   0.0 min] PROFILE: laptop8gb | device: cuda | colab: False
+2026-10-03 12:09:15 [   0.0 min] GPU: NVIDIA GeForce RTX 4070 Laptop GPU | VRAM GB: 8.6
+2026-10-03 12:09:15 [   0.0 min] Config: {"PROFILE": "laptop8gb", "K_LIST": [8, 16, 32, 64, 128, 256], "K_ZS": [8, 16, 32, 64, 128, 256], "N_DRAWS_CHEAP": 30, "N_DRAWS_FT": 10, "N_DRAWS_ZS": 30, "N_TEST_CAP": 2000, "N_POOL_ZS": 3000, "N_RECAL_POOL": 1000, "BOOT_B": 500, "K_MECH": [16, 64, 256], "K_REL": 256, "K_SHIFT": 64, "N_MONO": 200, "N_FMT": 400, "N_MISS": 1000, "N_IMPL": 200, "N_REPR": 600, "MISS_RATES": [0.0, 0.2, 0.4, 0.6, 0.8], "FT_EPOCHS": {"8": 30, "16": 25, "32": 20, "64": 15, "128": 10, "256": 8}, "FT_BS": 16, "RUN_ICL": true, "ICL_K": [4, 16], "N_ICL_EVAL": 800, "N_ICL_DRAWS": 3, "LLM_BS": 8, "LAYA_BS": 32, "SYNTH_N": 0, "LLM_CANDIDATES": ["google/gemma-4-E2B-it", "google/gemma-4-E4B-it", "Qwen/Qwen3-4B-Instruct-2507"], "LAYA_ID": "convaiinnovations/laya", "LAYA_ADAPT": "lora", "LORA_R": 16, "RUN_PLAIN_INIT_ABLATION": false, "RUN_TABPFN": true, "RUN_LLM": true, "RUN_LAYA": true, "FORCE_RERUN": false}
+2026-10-03 12:09:15 [   0.0 min] project folder: <project-dir>
+2026-10-03 12:09:15 [   0.0 min] RESUME CHECK: 0 finished prediction runs and 0 NHANES files already on disk -> they are reused; only missing work is computed. keep-awake: on
+2026-10-03 12:09:15 [   0.0 min]   NHANES raw files already on disk: 0 (existing files are reused; only missing ones are downloaded)
+2026-10-03 12:09:17 [   0.0 min]   [data] downloaded DEMO_G.xpt (3.8 MB)
+2026-10-03 12:09:19 [   0.1 min]   [data] downloaded BIOPRO_G.xpt (2.0 MB)
+2026-10-03 12:09:21 [   0.1 min]   [data] downloaded ALB_CR_G.xpt (0.4 MB)
+2026-10-03 12:09:23 [   0.1 min]   [data] downloaded BMX_G.xpt (1.9 MB)
+2026-10-03 12:09:25 [   0.2 min]   [data] downloaded BPX_G.xpt (2.0 MB)
+2026-10-03 12:09:26 [   0.2 min]   [data] downloaded GHB_G.xpt (0.1 MB)
+2026-10-03 12:09:28 [   0.2 min]   [data] downloaded DIQ_G.xpt (4.0 MB)
+2026-10-03 12:09:29 [   0.2 min]   [data] downloaded BPQ_G.xpt (0.7 MB)
+2026-10-03 12:09:31 [   0.3 min]   [data] downloaded MCQ_G.xpt (6.9 MB)
+2026-10-03 12:09:33 [   0.3 min]   [data] downloaded SMQ_G.xpt (1.9 MB)
+2026-10-03 12:09:33 [   0.3 min]   cycle 2011-2012: n=5121, CKD-range prevalence=0.173
+2026-10-03 12:09:35 [   0.3 min]   [data] downloaded DEMO_H.xpt (3.8 MB)
+2026-10-03 12:09:37 [   0.4 min]   [data] downloaded BIOPRO_H.xpt (2.1 MB)
+2026-10-03 12:09:39 [   0.4 min]   [data] downloaded ALB_CR_H.xpt (0.4 MB)
+2026-10-03 12:09:41 [   0.4 min]   [data] downloaded BMX_H.xpt (2.0 MB)
+2026-10-03 12:09:43 [   0.5 min]   [data] downloaded BPX_H.xpt (1.8 MB)
+2026-10-03 12:09:44 [   0.5 min]   [data] downloaded GHB_H.xpt (0.1 MB)
+2026-10-03 12:09:46 [   0.5 min]   [data] downloaded DIQ_H.xpt (4.2 MB)
+2026-10-03 12:09:47 [   0.5 min]   [data] downloaded BPQ_H.xpt (0.7 MB)
+2026-10-03 12:09:49 [   0.6 min]   [data] downloaded MCQ_H.xpt (7.4 MB)
+2026-10-03 12:09:51 [   0.6 min]   [data] downloaded SMQ_H.xpt (2.2 MB)
+2026-10-03 12:09:51 [   0.6 min]   cycle 2013-2014: n=5566, CKD-range prevalence=0.169
+2026-10-03 12:09:53 [   0.6 min]   [data] downloaded DEMO_I.xpt (3.8 MB)
+2026-10-03 12:09:55 [   0.7 min]   [data] downloaded BIOPRO_I.xpt (2.1 MB)
+2026-10-03 12:09:57 [   0.7 min]   [data] downloaded ALB_CR_I.xpt (0.6 MB)
+2026-10-03 12:09:59 [   0.7 min]   [data] downloaded BMX_I.xpt (2.0 MB)
+2026-10-03 12:10:00 [   0.8 min]   [data] downloaded BPX_I.xpt (1.6 MB)
+2026-10-03 12:10:02 [   0.8 min]   [data] downloaded GHB_I.xpt (0.1 MB)
+2026-10-03 12:10:03 [   0.8 min]   [data] downloaded DIQ_I.xpt (4.1 MB)
+2026-10-03 12:10:05 [   0.8 min]   [data] downloaded BPQ_I.xpt (0.6 MB)
+2026-10-03 12:10:06 [   0.9 min]   [data] downloaded MCQ_I.xpt (6.9 MB)
+2026-10-03 12:10:08 [   0.9 min]   [data] downloaded SMQ_I.xpt (2.7 MB)
+2026-10-03 12:10:08 [   0.9 min]   cycle 2015-2016: n=5331, CKD-range prevalence=0.166
+2026-10-03 12:10:10 [   0.9 min]   [data] downloaded P_DEMO.xpt (3.6 MB)
+2026-10-03 12:10:12 [   1.0 min]   [data] downloaded P_BIOPRO.xpt (3.4 MB)
+2026-10-03 12:10:13 [   1.0 min]   [data] downloaded P_ALB_CR.xpt (0.8 MB)
+2026-10-03 12:10:15 [   1.0 min]   [data] downloaded P_BMX.xpt (2.5 MB)
+2026-10-03 12:10:17 [   1.0 min]   [data] downloaded P_BPXO.xpt (1.0 MB)
+2026-10-03 12:10:19 [   1.1 min]   [data] downloaded P_GHB.xpt (0.2 MB)
+2026-10-03 12:10:22 [   1.1 min]   [data] downloaded P_DIQ.xpt (3.4 MB)
+2026-10-03 12:10:24 [   1.2 min]   [data] downloaded P_BPQ.xpt (0.9 MB)
+2026-10-03 12:10:26 [   1.2 min]   [data] downloaded P_MCQ.xpt (7.6 MB)
+2026-10-03 12:10:29 [   1.2 min]   [data] downloaded P_SMQ.xpt (1.4 MB)
+2026-10-03 12:10:29 [   1.2 min]   cycle 2017-2020: n=8165, CKD-range prevalence=0.186
+2026-10-03 12:10:31 [   1.3 min]   [data] downloaded DEMO_L.xpt (2.6 MB)
+2026-10-03 12:10:33 [   1.3 min]   [data] downloaded BIOPRO_L.xpt (2.4 MB)
+2026-10-03 12:10:35 [   1.3 min]   [data] downloaded ALB_CR_L.xpt (0.5 MB)
+2026-10-03 12:10:38 [   1.4 min]   [data] downloaded BMX_L.xpt (1.6 MB)
+2026-10-03 12:10:41 [   1.4 min]   [data] downloaded BPXO_L.xpt (0.7 MB)
+2026-10-03 12:10:43 [   1.5 min]   [data] downloaded GHB_L.xpt (0.2 MB)
+2026-10-03 12:10:45 [   1.5 min]   [data] downloaded DIQ_L.xpt (0.8 MB)
+2026-10-03 12:10:46 [   1.5 min]   [data] downloaded BPQ_L.xpt (0.4 MB)
+2026-10-03 12:10:48 [   1.6 min]   [data] downloaded MCQ_L.xpt (3.3 MB)
+2026-10-03 12:10:50 [   1.6 min]   [data] downloaded SMQ_L.xpt (0.7 MB)
+2026-10-03 12:10:50 [   1.6 min]   cycle 2021-2023: n=5575, CKD-range prevalence=0.174
+2026-10-03 12:10:50 [   1.6 min] Analysis table: 29758 adults across cycles ['2011-2012', '2013-2014', '2015-2016', '2017-2020', '2021-2023']
+2026-10-03 12:10:50 [   1.6 min]   split pool   : n=  3000  prevalence=0.164
+2026-10-03 12:10:50 [   1.6 min]   split val    : n=  1000  prevalence=0.162
+2026-10-03 12:10:50 [   1.6 min]   split int    : n=  2000  prevalence=0.158
+2026-10-03 12:10:50 [   1.6 min]   split T1pool : n=  1000  prevalence=0.187
+2026-10-03 12:10:50 [   1.6 min]   split T1     : n=  2000  prevalence=0.189
+2026-10-03 12:10:50 [   1.6 min]   split T2pool : n=  1000  prevalence=0.173
+2026-10-03 12:10:50 [   1.6 min]   split T2     : n=  2000  prevalence=0.183
+2026-10-03 12:10:50 [   1.6 min] design fingerprint: 8622c7b81a4af43e
+2026-10-03 12:10:51 [   1.6 min] Example serialized state:
+Age: 57 years
+Sex: male
+Body mass index: 28.0 kg/m2
+Waist circumference: 108 cm
+Systolic blood pressure: 111 mmHg
+Diastolic blood pressure: 67 mmHg
+Hemoglobin A1c: 5.3 %
+Diagnosed diabetes: no
+Told by a doctor of high blood pressure: no
+History of congestive heart failure: no
+History of coronary heart disease: no
+History of stroke: no
+Smoked at least 100 cigarettes in lifetime: yes
+2026-10-03 12:10:51 [   1.6 min] Tabular arms
+2026-10-03 12:11:16 [   2.0 min] [warn] TabPFN unavailable -> arm skipped. Reason: No module named 'tabpfn' 
+       Fix: accept the licence at https://ux.priorlabs.ai and set TABPFN_TOKEN (see README cell).
+2026-10-03 12:11:16 [   2.0 min] LLM arm (zero-shot constrained scoring)
+2026-10-03 12:11:16 [   2.0 min]   loading LLM google/gemma-4-E2B-it ...
+2026-10-03 12:11:52 [   2.6 min]   [warn] could not load google/gemma-4-E2B-it: 'list' object has no attribute 'keys'
+2026-10-03 12:11:53 [   2.6 min]   loading LLM google/gemma-4-E4B-it ...
+2026-10-03 12:12:30 [   3.3 min]   [warn] could not load google/gemma-4-E4B-it: 'list' object has no attribute 'keys'
+2026-10-03 12:12:30 [   3.3 min]   loading LLM Qwen/Qwen3-4B-Instruct-2507 ...
+2026-10-03 14:04:07 [ 114.9 min]   LLM ready: Qwen/Qwen3-4B-Instruct-2507 | VRAM now 2.7 GB
+2026-10-03 14:36:58 [ 147.7 min]   LLM zero-shot scored 12000 rows with Qwen/Qwen3-4B-Instruct-2507; peak VRAM 3.4 GB
+2026-10-03 14:37:03 [ 147.8 min]   loading LLM google/gemma-4-E2B-it ...
+2026-10-03 14:37:06 [ 147.9 min]   [warn] could not load google/gemma-4-E2B-it: 'list' object has no attribute 'keys'
+2026-10-03 14:37:07 [ 147.9 min]   loading LLM google/gemma-4-E4B-it ...
+2026-10-03 14:37:10 [ 147.9 min]   [warn] could not load google/gemma-4-E4B-it: 'list' object has no attribute 'keys'
+2026-10-03 14:37:11 [ 147.9 min]   loading LLM Qwen/Qwen3-4B-Instruct-2507 ...
+2026-10-03 14:37:23 [ 148.1 min]   LLM ready: Qwen/Qwen3-4B-Instruct-2507 | VRAM now 2.7 GB
+2026-10-03 17:15:40 [ 306.4 min]   [LLM] OOM -> batch size 2
+2026-10-03 22:15:41 [   0.0 min] PROFILE: laptop8gb | device: cuda | colab: False
+2026-10-03 22:15:41 [   0.0 min] GPU: NVIDIA GeForce RTX 4070 Laptop GPU | VRAM GB: 8.6
+2026-10-03 22:15:41 [   0.0 min] Config: {"PROFILE": "laptop8gb", "K_LIST": [8, 16, 32, 64, 128, 256], "K_ZS": [8, 16, 32, 64, 128, 256], "N_DRAWS_CHEAP": 30, "N_DRAWS_FT": 10, "N_DRAWS_ZS": 30, "N_TEST_CAP": 2000, "N_POOL_ZS": 3000, "N_RECAL_POOL": 1000, "BOOT_B": 500, "K_MECH": [16, 64, 256], "K_REL": 256, "K_SHIFT": 64, "N_MONO": 200, "N_FMT": 400, "N_MISS": 1000, "N_IMPL": 200, "N_REPR": 600, "MISS_RATES": [0.0, 0.2, 0.4, 0.6, 0.8], "FT_EPOCHS": {"8": 30, "16": 25, "32": 20, "64": 15, "128": 10, "256": 8}, "FT_BS": 16, "RUN_ICL": false, "ICL_K": [4, 16], "N_ICL_EVAL": 800, "N_ICL_DRAWS": 3, "LLM_BS": 8, "LAYA_BS": 32, "SYNTH_N": 0, "LLM_CANDIDATES": ["Qwen/Qwen3-4B-Instruct-2507"], "LAYA_ID": "convaiinnovations/laya", "LAYA_ADAPT": "lora", "LORA_R": 16, "RUN_PLAIN_INIT_ABLATION": false, "RUN_TABPFN": true, "RUN_LLM": true, "RUN_LAYA": true, "FORCE_RERUN": false}
+2026-10-03 22:15:41 [   0.0 min] project folder: <project-dir>
+2026-10-03 22:15:41 [   0.0 min] RESUME CHECK: 726 finished prediction runs and 50 NHANES files already on disk -> they are reused; only missing work is computed. keep-awake: on
+2026-10-03 22:15:42 [   0.0 min] Analysis table: 29758 adults across cycles ['2011-2012', '2013-2014', '2015-2016', '2017-2020', '2021-2023']
+2026-10-03 22:15:42 [   0.0 min]   split pool   : n=  3000  prevalence=0.164
+2026-10-03 22:15:42 [   0.0 min]   split val    : n=  1000  prevalence=0.162
+2026-10-03 22:15:42 [   0.0 min]   split int    : n=  2000  prevalence=0.158
+2026-10-03 22:15:42 [   0.0 min]   split T1pool : n=  1000  prevalence=0.187
+2026-10-03 22:15:42 [   0.0 min]   split T1     : n=  2000  prevalence=0.189
+2026-10-03 22:15:42 [   0.0 min]   split T2pool : n=  1000  prevalence=0.173
+2026-10-03 22:15:42 [   0.0 min]   split T2     : n=  2000  prevalence=0.183
+2026-10-03 22:15:42 [   0.0 min] design fingerprint: 8622c7b81a4af43e
+2026-10-03 22:15:42 [   0.0 min] Example serialized state:
+Age: 57 years
+Sex: male
+Body mass index: 28.0 kg/m2
+Waist circumference: 108 cm
+Systolic blood pressure: 111 mmHg
+Diastolic blood pressure: 67 mmHg
+Hemoglobin A1c: 5.3 %
+Diagnosed diabetes: no
+Told by a doctor of high blood pressure: no
+History of congestive heart failure: no
+History of coronary heart disease: no
+History of stroke: no
+Smoked at least 100 cigarettes in lifetime: yes
+2026-10-03 22:15:42 [   0.0 min] Tabular arms
+2026-10-03 22:15:45 [   0.1 min]   LR: all runs cached
+2026-10-03 22:15:47 [   0.1 min]   XGB: all runs cached
+2026-10-03 22:15:53 [   0.2 min] [warn] TabPFN unavailable -> arm skipped. Reason: TabPFN requires a one-time license acceptance to download
+model weights for local inference, but browser login is
+disabled (TABPFN_NO_BROWSER is set).
+
+Set the TABPFN_TOKEN environment variable with a 
+       Fix: accept the licence at https://ux.priorlabs.ai and set TABPFN_TOKEN (see README cell).
+2026-10-03 22:15:53 [   0.2 min] LLM arm (zero-shot constrained scoring)
+2026-10-03 22:27:52 [  12.2 min]   Laya loaded: convaiinnovations/laya | 421M params | native choice-temperature T=1.91 | max_len=512
+2026-10-03 22:31:24 [   0.0 min] PROFILE: laptop8gb | device: cuda | colab: False
+2026-10-03 22:31:24 [   0.0 min] GPU: NVIDIA GeForce RTX 4070 Laptop GPU | VRAM GB: 8.6
+2026-10-03 22:31:24 [   0.0 min] Config: {"PROFILE": "laptop8gb", "K_LIST": [8, 16, 32, 64, 128, 256], "K_ZS": [8, 16, 32, 64, 128, 256], "N_DRAWS_CHEAP": 30, "N_DRAWS_FT": 10, "N_DRAWS_ZS": 30, "N_TEST_CAP": 2000, "N_POOL_ZS": 3000, "N_RECAL_POOL": 1000, "BOOT_B": 500, "K_MECH": [16, 64, 256], "K_REL": 256, "K_SHIFT": 64, "N_MONO": 200, "N_FMT": 400, "N_MISS": 1000, "N_IMPL": 200, "N_REPR": 600, "MISS_RATES": [0.0, 0.2, 0.4, 0.6, 0.8], "FT_EPOCHS": {"8": 30, "16": 25, "32": 20, "64": 15, "128": 10, "256": 8}, "FT_BS": 16, "RUN_ICL": false, "ICL_K": [4, 16], "N_ICL_EVAL": 800, "N_ICL_DRAWS": 3, "LLM_BS": 8, "LAYA_BS": 32, "SYNTH_N": 0, "LLM_CANDIDATES": ["Qwen/Qwen3-4B-Instruct-2507"], "LAYA_ID": "convaiinnovations/laya", "LAYA_ADAPT": "lora", "LORA_R": 16, "RUN_PLAIN_INIT_ABLATION": false, "RUN_TABPFN": true, "RUN_LLM": true, "RUN_LAYA": true, "FORCE_RERUN": false}
+2026-10-03 22:31:24 [   0.0 min] project folder: <project-dir>
+2026-10-03 22:31:24 [   0.0 min] RESUME CHECK: 726 finished prediction runs and 50 NHANES files already on disk -> they are reused; only missing work is computed. keep-awake: on
+2026-10-03 22:31:25 [   0.0 min] Analysis table: 29758 adults across cycles ['2011-2012', '2013-2014', '2015-2016', '2017-2020', '2021-2023']
+2026-10-03 22:31:25 [   0.0 min]   split pool   : n=  3000  prevalence=0.164
+2026-10-03 22:31:25 [   0.0 min]   split val    : n=  1000  prevalence=0.162
+2026-10-03 22:31:25 [   0.0 min]   split int    : n=  2000  prevalence=0.158
+2026-10-03 22:31:25 [   0.0 min]   split T1pool : n=  1000  prevalence=0.187
+2026-10-03 22:31:25 [   0.0 min]   split T1     : n=  2000  prevalence=0.189
+2026-10-03 22:31:25 [   0.0 min]   split T2pool : n=  1000  prevalence=0.173
+2026-10-03 22:31:25 [   0.0 min]   split T2     : n=  2000  prevalence=0.183
+2026-10-03 22:31:25 [   0.0 min] design fingerprint: 8622c7b81a4af43e
+2026-10-03 22:31:25 [   0.0 min] Example serialized state:
+Age: 57 years
+Sex: male
+Body mass index: 28.0 kg/m2
+Waist circumference: 108 cm
+Systolic blood pressure: 111 mmHg
+Diastolic blood pressure: 67 mmHg
+Hemoglobin A1c: 5.3 %
+Diagnosed diabetes: no
+Told by a doctor of high blood pressure: no
+History of congestive heart failure: no
+History of coronary heart disease: no
+History of stroke: no
+Smoked at least 100 cigarettes in lifetime: yes
+2026-10-03 22:31:26 [   0.0 min] Tabular arms
+2026-10-03 22:31:28 [   0.1 min]   LR: all runs cached
+2026-10-03 22:31:30 [   0.1 min]   XGB: all runs cached
+2026-10-03 22:43:48 [  12.4 min] TabPFN ready: ModelVersion.V3_5
+2026-10-03 23:10:24 [  39.0 min] LLM arm (zero-shot constrained scoring)
+2026-10-03 23:21:58 [  50.6 min] [warn] Laya could not be loaded -> System One arms skipped. Reason: [WinError 1314] A required privilege is not held by the client: '..\\..\\..\\blobs\\9fd800115c5c92353220aa66addfce67a9135f32' -> '<hf-cache>\\hub\\models--convaiinnovations--laya\\snapshots\\7b928d828b7b0e022f929d9bd2e44165aa270148\\tokenizer\\tokenizer_config.json'
+2026-10-03 23:21:58 [  50.6 min] E2 reliability suite
+2026-10-03 23:21:59 [  50.6 min]   loading LLM Qwen/Qwen3-4B-Instruct-2507 ...
+2026-10-03 23:22:25 [  51.0 min]   LLM ready: Qwen/Qwen3-4B-Instruct-2507 | VRAM now 3.6 GB
+2026-10-04 00:08:01 [  96.6 min] Reliability suite done; arms: ['LR', 'XGB', 'TabPFN', 'LLM-ZS']
+2026-10-04 00:08:03 [  96.6 min] Arms available: ['LLM-ICL4', 'LLM-ZS', 'LLM-ZS+Platt', 'LLM-ZS+TS', 'LR', 'TabPFN', 'XGB']
+2026-10-04 00:08:39 [  97.2 min] Reference arm for paired comparisons: TabPFN; headline label budget K=64
+2026-10-04 00:10:26 [  99.0 min] H1: not evaluable (no System One fine-tuning runs)
+2026-10-04 00:10:26 [  99.0 min] H2: not supported (mean monotonicity violation text arms 0.044 vs reference 0.134; mean big-change rate under restatement 0.325)
+2026-10-04 00:10:26 [  99.0 min] H3: not supported (arms exceeding TabPFN mean AUROC: [('LLM-ZS+Platt', 32)])
+2026-10-04 00:10:26 [  99.0 min] H4: drift (T2 Brier minus internal): zero-shot 0.0096 vs adapted 0.0152; Brier recovered by recalibration: zero-shot 0.0659, adapted 0.0061
+2026-10-04 00:10:34 [  99.2 min] [skip] Fig. 5 (no mechanism-ablation runs)
+2026-10-04 00:10:36 [  99.2 min] Figures: ['fig1_study_design', 'fig2_label_budget', 'fig3_reliability_diagrams', 'fig4_reliability_suite', 'fig6_temporal_shift', 'fig7_selective_decision']
+2026-10-04 00:10:36 [  99.2 min] Tables written to <project-dir>\outputs_laptop8gb\tables
+2026-10-04 00:33:11 [   0.0 min] PROFILE: laptop8gb | device: cuda | colab: False
+2026-10-04 00:33:11 [   0.0 min] GPU: NVIDIA GeForce RTX 4070 Laptop GPU | VRAM GB: 8.6
+2026-10-04 00:33:11 [   0.0 min] Config: {"PROFILE": "laptop8gb", "K_LIST": [8, 16, 32, 64, 128, 256], "K_ZS": [8, 16, 32, 64, 128, 256], "N_DRAWS_CHEAP": 30, "N_DRAWS_FT": 10, "N_DRAWS_ZS": 30, "N_TEST_CAP": 2000, "N_POOL_ZS": 3000, "N_RECAL_POOL": 1000, "BOOT_B": 500, "K_MECH": [16, 64, 256], "K_REL": 256, "K_SHIFT": 64, "N_MONO": 200, "N_FMT": 400, "N_MISS": 1000, "N_IMPL": 200, "N_REPR": 600, "MISS_RATES": [0.0, 0.2, 0.4, 0.6, 0.8], "FT_EPOCHS": {"8": 30, "16": 25, "32": 20, "64": 15, "128": 10, "256": 8}, "FT_BS": 16, "RUN_ICL": false, "ICL_K": [4, 16], "N_ICL_EVAL": 800, "N_ICL_DRAWS": 3, "LLM_BS": 8, "LAYA_BS": 32, "SYNTH_N": 0, "LLM_CANDIDATES": ["Qwen/Qwen3-4B-Instruct-2507"], "LAYA_ID": "convaiinnovations/laya", "LAYA_ADAPT": "lora", "LORA_R": 16, "RUN_PLAIN_INIT_ABLATION": false, "RUN_TABPFN": true, "RUN_LLM": true, "RUN_LAYA": true, "FORCE_RERUN": false}
+2026-10-04 00:33:11 [   0.0 min] project folder: <project-dir>
+2026-10-04 00:33:11 [   0.0 min] RESUME CHECK: 907 finished prediction runs and 50 NHANES files already on disk -> they are reused; only missing work is computed. keep-awake: on
+2026-10-04 00:33:11 [   0.0 min] Analysis table: 29758 adults across cycles ['2011-2012', '2013-2014', '2015-2016', '2017-2020', '2021-2023']
+2026-10-04 00:33:11 [   0.0 min]   split pool   : n=  3000  prevalence=0.164
+2026-10-04 00:33:11 [   0.0 min]   split val    : n=  1000  prevalence=0.162
+2026-10-04 00:33:11 [   0.0 min]   split int    : n=  2000  prevalence=0.158
+2026-10-04 00:33:11 [   0.0 min]   split T1pool : n=  1000  prevalence=0.187
+2026-10-04 00:33:11 [   0.0 min]   split T1     : n=  2000  prevalence=0.189
+2026-10-04 00:33:11 [   0.0 min]   split T2pool : n=  1000  prevalence=0.173
+2026-10-04 00:33:11 [   0.0 min]   split T2     : n=  2000  prevalence=0.183
+2026-10-04 00:33:11 [   0.0 min] design fingerprint: 8622c7b81a4af43e
+2026-10-04 00:33:11 [   0.0 min] Example serialized state:
+Age: 57 years
+Sex: male
+Body mass index: 28.0 kg/m2
+Waist circumference: 108 cm
+Systolic blood pressure: 111 mmHg
+Diastolic blood pressure: 67 mmHg
+Hemoglobin A1c: 5.3 %
+Diagnosed diabetes: no
+Told by a doctor of high blood pressure: no
+History of congestive heart failure: no
+History of coronary heart disease: no
+History of stroke: no
+Smoked at least 100 cigarettes in lifetime: yes
+2026-10-04 00:33:11 [   0.0 min] Tabular arms
+2026-10-04 00:33:14 [   0.1 min]   LR: all runs cached
+2026-10-04 00:33:15 [   0.1 min]   XGB: all runs cached
+2026-10-04 00:33:20 [   0.2 min] TabPFN ready: ModelVersion.V3_5
+2026-10-04 00:33:23 [   0.2 min]   TabPFN: all runs cached
+2026-10-04 00:33:23 [   0.2 min] LLM arm (zero-shot constrained scoring)
+2026-10-04 00:33:31 [   0.3 min]   Laya loaded: convaiinnovations/laya | 421M params | native choice-temperature T=1.91 | max_len=512
+2026-10-04 00:36:37 [   3.4 min]   Laya zero-shot scored 12000 rows in 186s
+2026-10-04 00:36:47 [   3.6 min]   Laya consistency check: max |p_agent - p_mine| = 0.0616 (should be ~0)
+2026-10-04 11:32:28 [   0.0 min] PROFILE: laptop8gb | device: cuda | colab: False
+2026-10-04 11:32:28 [   0.0 min] GPU: NVIDIA GeForce RTX 4070 Laptop GPU | VRAM GB: 8.6
+2026-10-04 11:32:28 [   0.0 min] Config: {"PROFILE": "laptop8gb", "K_LIST": [8, 16, 32, 64, 128, 256], "K_ZS": [8, 16, 32, 64, 128, 256], "N_DRAWS_CHEAP": 30, "N_DRAWS_FT": 5, "N_DRAWS_ZS": 30, "N_TEST_CAP": 2000, "N_POOL_ZS": 3000, "N_RECAL_POOL": 1000, "BOOT_B": 500, "K_MECH": [16, 64, 256], "K_REL": 256, "K_SHIFT": 64, "N_MONO": 200, "N_FMT": 400, "N_MISS": 1000, "N_IMPL": 200, "N_REPR": 600, "MISS_RATES": [0.0, 0.2, 0.4, 0.6, 0.8], "FT_EPOCHS": {"8": 30, "16": 25, "32": 20, "64": 15, "128": 10, "256": 8}, "FT_BS": 16, "RUN_ICL": false, "ICL_K": [4, 16], "N_ICL_EVAL": 800, "N_ICL_DRAWS": 3, "LLM_BS": 8, "LAYA_BS": 32, "SYNTH_N": 0, "LLM_CANDIDATES": ["Qwen/Qwen3-4B-Instruct-2507"], "LAYA_ID": "convaiinnovations/laya", "LAYA_ADAPT": "lora", "LORA_R": 16, "RUN_PLAIN_INIT_ABLATION": false, "RUN_TABPFN": true, "RUN_LLM": true, "RUN_LAYA": true, "FORCE_RERUN": false}
+2026-10-04 11:32:28 [   0.0 min] project folder: <project-dir>
+2026-10-04 11:32:28 [   0.0 min] RESUME CHECK: 1269 finished prediction runs and 50 NHANES files already on disk -> they are reused; only missing work is computed. keep-awake: on
+2026-10-04 11:32:29 [   0.0 min] Analysis table: 29758 adults across cycles ['2011-2012', '2013-2014', '2015-2016', '2017-2020', '2021-2023']
+2026-10-04 11:32:29 [   0.0 min]   split pool   : n=  3000  prevalence=0.164
+2026-10-04 11:32:29 [   0.0 min]   split val    : n=  1000  prevalence=0.162
+2026-10-04 11:32:29 [   0.0 min]   split int    : n=  2000  prevalence=0.158
+2026-10-04 11:32:29 [   0.0 min]   split T1pool : n=  1000  prevalence=0.187
+2026-10-04 11:32:29 [   0.0 min]   split T1     : n=  2000  prevalence=0.189
+2026-10-04 11:32:29 [   0.0 min]   split T2pool : n=  1000  prevalence=0.173
+2026-10-04 11:32:29 [   0.0 min]   split T2     : n=  2000  prevalence=0.183
+2026-10-04 11:32:29 [   0.0 min] design fingerprint: 8622c7b81a4af43e
+2026-10-04 11:32:29 [   0.0 min] Example serialized state:
+Age: 57 years
+Sex: male
+Body mass index: 28.0 kg/m2
+Waist circumference: 108 cm
+Systolic blood pressure: 111 mmHg
+Diastolic blood pressure: 67 mmHg
+Hemoglobin A1c: 5.3 %
+Diagnosed diabetes: no
+Told by a doctor of high blood pressure: no
+History of congestive heart failure: no
+History of coronary heart disease: no
+History of stroke: no
+Smoked at least 100 cigarettes in lifetime: yes
+2026-10-04 11:32:29 [   0.0 min] Tabular arms
+2026-10-04 11:32:29 [   0.0 min]   LR: all runs cached
+2026-10-04 11:32:30 [   0.0 min]   XGB: all runs cached
+2026-10-04 11:32:36 [   0.1 min] TabPFN ready: ModelVersion.V3_5
+2026-10-04 11:32:36 [   0.1 min]   TabPFN: all runs cached
+2026-10-04 11:32:37 [   0.1 min] LLM arm (zero-shot constrained scoring)
+2026-10-04 11:32:41 [   0.2 min]   Laya loaded: convaiinnovations/laya | 421M params | native choice-temperature T=1.91 | max_len=512
+2026-10-04 11:32:41 [   0.2 min]   Laya zero-shot scores loaded from checkpoint
+2026-10-04 11:32:52 [   0.4 min]   Laya consistency check: max |p_agent - p_mine| = 0.0616 (should be ~0)
+2026-10-04 16:04:07 [   0.0 min] PROFILE: laptop8gb | device: cuda | colab: False
+2026-10-04 16:04:07 [   0.0 min] GPU: NVIDIA GeForce RTX 4070 Laptop GPU | VRAM GB: 8.6
+2026-10-04 16:04:07 [   0.0 min] Config: {"PROFILE": "laptop8gb", "K_LIST": [8, 16, 32, 64, 128, 256], "K_ZS": [8, 16, 32, 64, 128, 256], "N_DRAWS_CHEAP": 30, "N_DRAWS_FT": 5, "N_DRAWS_ZS": 30, "N_TEST_CAP": 2000, "N_POOL_ZS": 3000, "N_RECAL_POOL": 1000, "BOOT_B": 500, "K_MECH": [16, 64, 256], "K_REL": 256, "K_SHIFT": 64, "N_MONO": 200, "N_FMT": 400, "N_MISS": 1000, "N_IMPL": 200, "N_REPR": 600, "MISS_RATES": [0.0, 0.2, 0.4, 0.6, 0.8], "FT_EPOCHS": {"8": 30, "16": 25, "32": 20, "64": 15, "128": 10, "256": 8}, "FT_BS": 16, "RUN_ICL": false, "ICL_K": [4, 16], "N_ICL_EVAL": 800, "N_ICL_DRAWS": 3, "LLM_BS": 8, "LAYA_BS": 32, "SYNTH_N": 0, "LLM_CANDIDATES": ["Qwen/Qwen3-4B-Instruct-2507"], "LAYA_ID": "convaiinnovations/laya", "LAYA_ADAPT": "lora", "LORA_R": 16, "RUN_PLAIN_INIT_ABLATION": false, "RUN_TABPFN": true, "RUN_LLM": true, "RUN_LAYA": true, "FORCE_RERUN": false}
+2026-10-04 16:04:07 [   0.0 min] project folder: <project-dir>
+2026-10-04 16:04:07 [   0.0 min] RESUME CHECK: 1278 finished prediction runs and 50 NHANES files already on disk -> they are reused; only missing work is computed. keep-awake: on
+2026-10-04 16:04:08 [   0.0 min] Analysis table: 29758 adults across cycles ['2011-2012', '2013-2014', '2015-2016', '2017-2020', '2021-2023']
+2026-10-04 16:04:08 [   0.0 min]   split pool   : n=  3000  prevalence=0.164
+2026-10-04 16:04:08 [   0.0 min]   split val    : n=  1000  prevalence=0.162
+2026-10-04 16:04:08 [   0.0 min]   split int    : n=  2000  prevalence=0.158
+2026-10-04 16:04:08 [   0.0 min]   split T1pool : n=  1000  prevalence=0.187
+2026-10-04 16:04:08 [   0.0 min]   split T1     : n=  2000  prevalence=0.189
+2026-10-04 16:04:08 [   0.0 min]   split T2pool : n=  1000  prevalence=0.173
+2026-10-04 16:04:08 [   0.0 min]   split T2     : n=  2000  prevalence=0.183
+2026-10-04 16:04:08 [   0.0 min] design fingerprint: 8622c7b81a4af43e
+2026-10-04 16:04:08 [   0.0 min] Example serialized state:
+Age: 57 years
+Sex: male
+Body mass index: 28.0 kg/m2
+Waist circumference: 108 cm
+Systolic blood pressure: 111 mmHg
+Diastolic blood pressure: 67 mmHg
+Hemoglobin A1c: 5.3 %
+Diagnosed diabetes: no
+Told by a doctor of high blood pressure: no
+History of congestive heart failure: no
+History of coronary heart disease: no
+History of stroke: no
+Smoked at least 100 cigarettes in lifetime: yes
+2026-10-04 16:04:08 [   0.0 min] Tabular arms
+2026-10-04 16:04:11 [   0.1 min]   LR: all runs cached
+2026-10-04 16:04:13 [   0.1 min]   XGB: all runs cached
+2026-10-04 16:04:20 [   0.2 min] TabPFN ready: ModelVersion.V3_5
+2026-10-04 16:04:22 [   0.2 min]   TabPFN: all runs cached
+2026-10-04 16:04:22 [   0.2 min] LLM arm (zero-shot constrained scoring)
+2026-10-04 16:04:30 [   0.4 min]   Laya loaded: convaiinnovations/laya | 421M params | native choice-temperature T=1.91 | max_len=512
+2026-10-04 16:04:30 [   0.4 min]   Laya zero-shot scores loaded from checkpoint
+2026-10-04 16:04:41 [   0.6 min]   Laya consistency check: max |p_agent - p_mine| = 0.0616 (should be ~0)
+2026-10-04 16:04:44 [   0.6 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 16:09:04 [   5.0 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 16:13:18 [   9.2 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 16:17:29 [  13.4 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 16:21:39 [  17.5 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 16:25:51 [  21.7 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 16:29:57 [  25.8 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 16:34:26 [  30.3 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 16:38:55 [  34.8 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 16:43:23 [  39.3 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 16:47:54 [  43.8 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 16:52:33 [  48.4 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 16:57:33 [  53.4 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 17:02:34 [  58.4 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 17:07:29 [  63.4 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 17:12:32 [  68.4 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 17:17:24 [  73.3 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 17:23:18 [  79.2 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 17:29:20 [  85.2 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 17:35:20 [  91.2 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 17:41:21 [  97.2 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 17:47:29 [ 103.4 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 18:01:30 [ 117.4 min]   S1 fine-tuning done; peak VRAM 7.4 GB
+2026-10-04 18:01:32 [ 117.4 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 18:05:24 [ 121.3 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 18:09:25 [ 125.3 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 18:13:26 [ 129.3 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 18:17:23 [ 133.3 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 18:21:26 [ 137.3 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 18:25:27 [ 141.3 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 18:29:24 [ 145.3 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 18:33:14 [ 149.1 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 18:37:04 [ 153.0 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 18:41:00 [ 156.9 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 18:45:10 [ 161.1 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 18:49:14 [ 165.1 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 18:53:16 [ 169.2 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 18:57:11 [ 173.1 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 19:01:08 [ 177.0 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 19:05:46 [ 181.6 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 19:10:23 [ 186.3 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 19:15:02 [ 190.9 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 19:19:42 [ 195.6 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 19:24:34 [ 200.5 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 19:29:22 [ 205.3 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 19:33:53 [ 209.8 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 19:38:21 [ 214.2 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 19:42:49 [ 218.7 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 19:47:17 [ 223.2 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 19:51:45 [ 227.6 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 19:56:12 [ 232.1 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 20:00:41 [ 236.6 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 20:06:31 [ 242.4 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 20:12:26 [ 248.3 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 20:19:59 [ 255.9 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 20:28:58 [ 264.8 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 20:37:58 [ 273.9 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 20:43:59 [ 279.9 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 20:50:00 [ 285.9 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 20:56:08 [ 292.0 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 21:04:07 [ 300.0 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 21:10:20 [ 306.2 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 21:16:21 [ 312.2 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 21:22:19 [   0.0 min] PROFILE: laptop8gb | device: cuda | colab: False
+2026-10-04 21:22:19 [   0.0 min] GPU: NVIDIA GeForce RTX 4070 Laptop GPU | VRAM GB: 8.6
+2026-10-04 21:22:19 [   0.0 min] Config: {"PROFILE": "laptop8gb", "K_LIST": [8, 16, 32, 64, 128, 256], "K_ZS": [8, 16, 32, 64, 128, 256], "N_DRAWS_CHEAP": 30, "N_DRAWS_FT": 5, "N_DRAWS_ZS": 30, "N_TEST_CAP": 2000, "N_POOL_ZS": 3000, "N_RECAL_POOL": 1000, "BOOT_B": 500, "K_MECH": [16, 64, 256], "K_REL": 256, "K_SHIFT": 64, "N_MONO": 200, "N_FMT": 400, "N_MISS": 1000, "N_IMPL": 200, "N_REPR": 600, "MISS_RATES": [0.0, 0.2, 0.4, 0.6, 0.8], "FT_EPOCHS": {"8": 30, "16": 25, "32": 20, "64": 15, "128": 10, "256": 8}, "FT_BS": 16, "RUN_ICL": false, "ICL_K": [4, 16], "N_ICL_EVAL": 800, "N_ICL_DRAWS": 3, "LLM_BS": 8, "LAYA_BS": 32, "SYNTH_N": 0, "LLM_CANDIDATES": ["Qwen/Qwen3-4B-Instruct-2507"], "LAYA_ID": "convaiinnovations/laya", "LAYA_ADAPT": "lora", "LORA_R": 16, "RUN_PLAIN_INIT_ABLATION": false, "RUN_TABPFN": true, "RUN_LLM": true, "RUN_LAYA": true, "FORCE_RERUN": false}
+2026-10-04 21:22:19 [   0.0 min] project folder: <project-dir>
+2026-10-04 21:22:19 [   0.0 min] RESUME CHECK: 1339 finished prediction runs and 50 NHANES files already on disk -> they are reused; only missing work is computed. keep-awake: on
+2026-10-04 21:22:19 [   0.0 min] Analysis table: 29758 adults across cycles ['2011-2012', '2013-2014', '2015-2016', '2017-2020', '2021-2023']
+2026-10-04 21:22:19 [   0.0 min]   split pool   : n=  3000  prevalence=0.164
+2026-10-04 21:22:19 [   0.0 min]   split val    : n=  1000  prevalence=0.162
+2026-10-04 21:22:19 [   0.0 min]   split int    : n=  2000  prevalence=0.158
+2026-10-04 21:22:19 [   0.0 min]   split T1pool : n=  1000  prevalence=0.187
+2026-10-04 21:22:19 [   0.0 min]   split T1     : n=  2000  prevalence=0.189
+2026-10-04 21:22:19 [   0.0 min]   split T2pool : n=  1000  prevalence=0.173
+2026-10-04 21:22:19 [   0.0 min]   split T2     : n=  2000  prevalence=0.183
+2026-10-04 21:22:19 [   0.0 min] design fingerprint: 8622c7b81a4af43e
+2026-10-04 21:22:19 [   0.0 min] Example serialized state:
+Age: 57 years
+Sex: male
+Body mass index: 28.0 kg/m2
+Waist circumference: 108 cm
+Systolic blood pressure: 111 mmHg
+Diastolic blood pressure: 67 mmHg
+Hemoglobin A1c: 5.3 %
+Diagnosed diabetes: no
+Told by a doctor of high blood pressure: no
+History of congestive heart failure: no
+History of coronary heart disease: no
+History of stroke: no
+Smoked at least 100 cigarettes in lifetime: yes
+2026-10-04 21:22:19 [   0.0 min] Tabular arms
+2026-10-04 21:22:20 [   0.0 min]   LR: all runs cached
+2026-10-04 21:22:20 [   0.0 min]   XGB: all runs cached
+2026-10-04 21:22:20 [   0.0 min] TabPFN ready: ModelVersion.V3_5
+2026-10-04 21:22:21 [   0.0 min]   TabPFN: all runs cached
+2026-10-04 21:22:21 [   0.0 min] LLM arm (zero-shot constrained scoring)
+2026-10-04 21:22:23 [   0.1 min]   Laya loaded: convaiinnovations/laya | 421M params | native choice-temperature T=1.91 | max_len=512
+2026-10-04 21:22:23 [   0.1 min]   Laya zero-shot scores loaded from checkpoint
+2026-10-04 21:22:28 [   0.2 min]   Laya consistency check: max |p_agent - p_mine| = 0.0616 (should be ~0)
+2026-10-04 21:22:29 [   0.2 min]   S1 fine-tuning: all runs cached
+2026-10-04 21:22:32 [   0.2 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 21:29:14 [   6.9 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 21:35:25 [  13.1 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 21:41:31 [  19.2 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 21:47:31 [  25.2 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 21:53:43 [  31.4 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 21:59:52 [  37.6 min]   S1 fine-tuning done; peak VRAM 7.4 GB
+2026-10-04 21:59:52 [  37.6 min] E2 reliability suite
+2026-10-04 21:59:53 [  37.6 min]   loading LLM Qwen/Qwen3-4B-Instruct-2507 ...
+2026-10-04 22:00:20 [  38.0 min]   LLM ready: Qwen/Qwen3-4B-Instruct-2507 | VRAM now 5.4 GB
+2026-10-04 22:06:21 [  44.0 min]   Laya loaded: convaiinnovations/laya | 421M params | native choice-temperature T=1.91 | max_len=512
+2026-10-04 22:06:21 [  44.0 min]   Laya zero-shot scores loaded from checkpoint
+2026-10-04 22:06:24 [  44.1 min]   [warn] agent consistency check could not run: CUDA out of memory. Tried to allocate 198.00 MiB. GPU 0 has a total capacity of 8.00 GiB of which 0 bytes is free. Of the allocated memory 7.09 GiB is
+2026-10-04 22:06:24 [  44.1 min]   S1 fine-tuning: all runs cached
+2026-10-04 22:06:25 [  44.1 min]   S1 fine-tuning: all runs cached
+2026-10-04 22:10:29 [   0.0 min] PROFILE: laptop8gb | device: cuda | colab: False
+2026-10-04 22:10:29 [   0.0 min] GPU: NVIDIA GeForce RTX 4070 Laptop GPU | VRAM GB: 8.6
+2026-10-04 22:10:29 [   0.0 min] Config: {"PROFILE": "laptop8gb", "K_LIST": [8, 16, 32, 64, 128, 256], "K_ZS": [8, 16, 32, 64, 128, 256], "N_DRAWS_CHEAP": 30, "N_DRAWS_FT": 5, "N_DRAWS_ZS": 30, "N_TEST_CAP": 2000, "N_POOL_ZS": 3000, "N_RECAL_POOL": 1000, "BOOT_B": 500, "K_MECH": [16, 64, 256], "K_REL": 256, "K_SHIFT": 64, "N_MONO": 200, "N_FMT": 400, "N_MISS": 1000, "N_IMPL": 200, "N_REPR": 600, "MISS_RATES": [0.0, 0.2, 0.4, 0.6, 0.8], "FT_EPOCHS": {"8": 30, "16": 25, "32": 20, "64": 15, "128": 10, "256": 8}, "FT_BS": 16, "RUN_ICL": false, "ICL_K": [4, 16], "N_ICL_EVAL": 800, "N_ICL_DRAWS": 3, "LLM_BS": 8, "LAYA_BS": 32, "SYNTH_N": 0, "LLM_CANDIDATES": ["Qwen/Qwen3-4B-Instruct-2507"], "LAYA_ID": "convaiinnovations/laya", "LAYA_ADAPT": "lora", "LORA_R": 16, "RUN_PLAIN_INIT_ABLATION": false, "RUN_TABPFN": true, "RUN_LLM": true, "RUN_LAYA": true, "FORCE_RERUN": false}
+2026-10-04 22:10:29 [   0.0 min] project folder: <project-dir>
+2026-10-04 22:10:29 [   0.0 min] RESUME CHECK: 1345 finished prediction runs and 50 NHANES files already on disk -> they are reused; only missing work is computed. keep-awake: on
+2026-10-04 22:10:30 [   0.0 min] Analysis table: 29758 adults across cycles ['2011-2012', '2013-2014', '2015-2016', '2017-2020', '2021-2023']
+2026-10-04 22:10:30 [   0.0 min]   split pool   : n=  3000  prevalence=0.164
+2026-10-04 22:10:30 [   0.0 min]   split val    : n=  1000  prevalence=0.162
+2026-10-04 22:10:30 [   0.0 min]   split int    : n=  2000  prevalence=0.158
+2026-10-04 22:10:30 [   0.0 min]   split T1pool : n=  1000  prevalence=0.187
+2026-10-04 22:10:30 [   0.0 min]   split T1     : n=  2000  prevalence=0.189
+2026-10-04 22:10:30 [   0.0 min]   split T2pool : n=  1000  prevalence=0.173
+2026-10-04 22:10:30 [   0.0 min]   split T2     : n=  2000  prevalence=0.183
+2026-10-04 22:10:30 [   0.0 min] design fingerprint: 8622c7b81a4af43e
+2026-10-04 22:10:30 [   0.0 min] Example serialized state:
+Age: 57 years
+Sex: male
+Body mass index: 28.0 kg/m2
+Waist circumference: 108 cm
+Systolic blood pressure: 111 mmHg
+Diastolic blood pressure: 67 mmHg
+Hemoglobin A1c: 5.3 %
+Diagnosed diabetes: no
+Told by a doctor of high blood pressure: no
+History of congestive heart failure: no
+History of coronary heart disease: no
+History of stroke: no
+Smoked at least 100 cigarettes in lifetime: yes
+2026-10-04 22:10:30 [   0.0 min] Tabular arms
+2026-10-04 22:10:30 [   0.0 min]   LR: all runs cached
+2026-10-04 22:10:30 [   0.0 min]   XGB: all runs cached
+2026-10-04 22:10:33 [   0.1 min] TabPFN ready: ModelVersion.V3_5
+2026-10-04 22:10:33 [   0.1 min]   TabPFN: all runs cached
+2026-10-04 22:10:33 [   0.1 min] LLM arm (zero-shot constrained scoring)
+2026-10-04 22:10:36 [   0.1 min]   Laya loaded: convaiinnovations/laya | 421M params | native choice-temperature T=1.91 | max_len=512
+2026-10-04 22:10:36 [   0.1 min]   Laya zero-shot scores loaded from checkpoint
+2026-10-04 22:10:41 [   0.2 min]   Laya consistency check: max |p_agent - p_mine| = 0.0616 (should be ~0)
+2026-10-04 22:10:41 [   0.2 min]   S1 fine-tuning: all runs cached
+2026-10-04 22:10:42 [   0.2 min]   S1 fine-tuning: all runs cached
+2026-10-04 22:10:42 [   0.2 min] E2 reliability suite
+2026-10-04 22:10:46 [   0.3 min]   [S1 train] out of memory -> micro-batch 8 (gradient accumulation)
+2026-10-04 22:13:12 [   2.7 min]   loading LLM Qwen/Qwen3-4B-Instruct-2507 ...
+2026-10-04 22:13:36 [   3.1 min]   LLM ready: Qwen/Qwen3-4B-Instruct-2507 | VRAM now 3.6 GB
+2026-10-04 23:00:48 [  50.3 min] Reliability suite done; arms: ['LR', 'XGB', 'TabPFN', 'LLM-ZS', 'S1-ZS', 'S1-FT-ce']
+2026-10-04 23:00:48 [  50.3 min] Arms available: ['LLM-ICL4', 'LLM-ZS', 'LLM-ZS+Platt', 'LLM-ZS+TS', 'LR', 'S1-FT-brier', 'S1-FT-ce', 'S1-FT-ce_ls', 'S1-FT-spherical', 'S1-ZS', 'S1-ZS+Platt', 'S1-ZS+TS', 'S1-ZS-rawT1', 'TabPFN', 'XGB']
+2026-10-04 23:01:45 [  51.3 min] Reference arm for paired comparisons: TabPFN; headline label budget K=64
+2026-10-04 23:04:38 [  54.1 min] H1: not supported (equivalent in 1/4 proper-score comparisons after temperature scaling)
+2026-10-04 23:04:38 [  54.1 min] H2: not supported (mean monotonicity violation text arms 0.128 vs reference 0.134; mean big-change rate under restatement 0.532)
+2026-10-04 23:04:38 [  54.1 min] H3: not supported (arms exceeding TabPFN mean AUROC: [('LLM-ZS+Platt', 32)])
+2026-10-04 23:04:38 [  54.1 min] H4: drift (T2 Brier minus internal): zero-shot 0.0016 vs adapted 0.0149; Brier recovered by recalibration: zero-shot 0.1135, adapted 0.0062
+2026-10-04 23:04:52 [  54.4 min] Figures: ['fig1_study_design', 'fig2_label_budget', 'fig3_reliability_diagrams', 'fig4_reliability_suite', 'fig5_mechanism_ablation', 'fig6_temporal_shift', 'fig7_selective_decision']
+2026-10-04 23:04:52 [  54.4 min] Tables written to <project-dir>\outputs_laptop8gb\tables

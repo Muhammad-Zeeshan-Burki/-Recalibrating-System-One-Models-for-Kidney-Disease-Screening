@@ -1,0 +1,26 @@
+# Downloaded NHANES source files (re-downloadable from the CDC)
+nhanes_raw/
+
+# Notebook / Python artefacts
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+
+# Interrupted-write leftovers produced by the notebook
+*.tmp
+
+# Re-run safety folders and archives created by the notebook
+stale_*/
+results_*.zip
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
